@@ -1,6 +1,6 @@
+import fs from 'node:fs';
 import axios from 'axios';
 import cheerio from 'cheerio';
-import fs from 'fs';
 import request from 'request';
 
 const memeUrl = 'https://memegen-link-examples-upleveled.netlify.app/';

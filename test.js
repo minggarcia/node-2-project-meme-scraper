@@ -62,3 +62,26 @@ fetch(imageUrl).attr('src') =>
 // fetch
 //   .then(imageUrl)
 //   .then((res) => res.body.pipe(fs.createWriteStream('./memes')));
+// const memeSourceArray = [];
+
+// request(
+//   'https://memegen-link-examples-upleveled.netlify.app/',
+//   (err, resp, html) => {
+//     if (!err) {
+//       const $ = cheerio.load(html);
+//       // getting the source:
+//       const memeObject = $('img');
+//       // make loop and savefirst 10 img in an array
+//       for (let i = 0; i < 10; i++) {
+//         const memeSource = memeObject[i].attribs.src;
+//         memeSourceArray.push(memeSource);
+//       }
+//     }
+//     console.log(memeSourceArray);
+//     const imageUrl = memeSourceArray;
+//   },
+// );
+
+// fetch
+//   .then(imageUrl)
+//   .then((res) => res.body.pipe(fs.createWriteStream('./memes')));
