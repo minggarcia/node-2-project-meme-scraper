@@ -7,7 +7,9 @@ const memeUrl = 'https://memegen-link-examples-upleveled.netlify.app/';
 
 async function getAllMemes(url) {
   try {
+    // empty array
     const memes = [];
+    // html from website
     const htmlMemes = await axios.get(url);
 
     const $ = cheerio.load(htmlMemes.data);
